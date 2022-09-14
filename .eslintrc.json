@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["standard"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 13
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "jsx-a11y/href-no-hash": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    // "react/jsx-filename-extension": [
+    //   "warn",
+    //   { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    // ],
+    "no-console": "off",
+    "multiline-ternary": 0,
+    "no-unused-vars": "off",
+    "no-shadow": 0,
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "react/prop-types": 0,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 80,
+        "tabWidth": 2,
+        "comments": 80,
+        "ignoreComments": false,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "semi": [2, "always"],
+    "comma-dangle": [2, "always-multiline"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".ts", ".tsx"]
+      }
+    }
+  }
+}

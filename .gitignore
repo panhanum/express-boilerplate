@@ -1,0 +1,5 @@
+.env
+node_modules
+build
+public/uploads
+newrelic_agent.log
